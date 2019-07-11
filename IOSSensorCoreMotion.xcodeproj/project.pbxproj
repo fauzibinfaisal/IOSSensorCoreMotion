@@ -12,6 +12,13 @@
 		EB451C0222D6B704005E7C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB451C0022D6B704005E7C26 /* Main.storyboard */; };
 		EB451C0422D6B705005E7C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB451C0322D6B705005E7C26 /* Assets.xcassets */; };
 		EB451C0722D6B705005E7C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB451C0522D6B705005E7C26 /* LaunchScreen.storyboard */; };
+		EB451C0F22D6B781005E7C26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EB451C0E22D6B781005E7C26 /* .gitignore */; };
+		EB451C1422D6B8C2005E7C26 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1322D6B8C2005E7C26 /* AccelerometerViewController.swift */; };
+		EB451C1622D6B8D4005E7C26 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1522D6B8D4005E7C26 /* GyroscopeViewController.swift */; };
+		EB451C1A22D6B91D005E7C26 /* MagnetometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1922D6B91D005E7C26 /* MagnetometerViewController.swift */; };
+		EB451C1C22D6B92B005E7C26 /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1B22D6B92B005E7C26 /* PedometerViewController.swift */; };
+		EB451C1E22D6B93E005E7C26 /* AltimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1D22D6B93E005E7C26 /* AltimeterViewController.swift */; };
+		EB451C2022D6BB8A005E7C26 /* DeviceMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB451C1F22D6BB8A005E7C26 /* DeviceMotionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		EB451C0322D6B705005E7C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB451C0622D6B705005E7C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB451C0822D6B705005E7C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB451C0E22D6B781005E7C26 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EB451C1322D6B8C2005E7C26 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		EB451C1522D6B8D4005E7C26 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
+		EB451C1922D6B91D005E7C26 /* MagnetometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerViewController.swift; sourceTree = "<group>"; };
+		EB451C1B22D6B92B005E7C26 /* PedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
+		EB451C1D22D6B93E005E7C26 /* AltimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterViewController.swift; sourceTree = "<group>"; };
+		EB451C1F22D6BB8A005E7C26 /* DeviceMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,7 @@
 		EB451BF022D6B704005E7C26 = {
 			isa = PBXGroup;
 			children = (
+				EB451C0E22D6B781005E7C26 /* .gitignore */,
 				EB451BFB22D6B704005E7C26 /* IOSSensorCoreMotion */,
 				EB451BFA22D6B704005E7C26 /* Products */,
 			);
@@ -54,14 +69,44 @@
 		EB451BFB22D6B704005E7C26 /* IOSSensorCoreMotion */ = {
 			isa = PBXGroup;
 			children = (
+				EB451C1222D6B889005E7C26 /* Controller */,
+				EB451C1122D6B883005E7C26 /* View */,
+				EB451C1022D6B877005E7C26 /* Model */,
 				EB451BFC22D6B704005E7C26 /* AppDelegate.swift */,
-				EB451BFE22D6B704005E7C26 /* ViewController.swift */,
-				EB451C0022D6B704005E7C26 /* Main.storyboard */,
 				EB451C0322D6B705005E7C26 /* Assets.xcassets */,
 				EB451C0522D6B705005E7C26 /* LaunchScreen.storyboard */,
 				EB451C0822D6B705005E7C26 /* Info.plist */,
 			);
 			path = IOSSensorCoreMotion;
+			sourceTree = "<group>";
+		};
+		EB451C1022D6B877005E7C26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB451C1122D6B883005E7C26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB451BFE22D6B704005E7C26 /* ViewController.swift */,
+				EB451C0022D6B704005E7C26 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB451C1222D6B889005E7C26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB451C1322D6B8C2005E7C26 /* AccelerometerViewController.swift */,
+				EB451C1522D6B8D4005E7C26 /* GyroscopeViewController.swift */,
+				EB451C1922D6B91D005E7C26 /* MagnetometerViewController.swift */,
+				EB451C1B22D6B92B005E7C26 /* PedometerViewController.swift */,
+				EB451C1D22D6B93E005E7C26 /* AltimeterViewController.swift */,
+				EB451C1F22D6BB8A005E7C26 /* DeviceMotionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB451C0F22D6B781005E7C26 /* .gitignore in Resources */,
 				EB451C0722D6B705005E7C26 /* LaunchScreen.storyboard in Resources */,
 				EB451C0422D6B705005E7C26 /* Assets.xcassets in Resources */,
 				EB451C0222D6B704005E7C26 /* Main.storyboard in Resources */,
@@ -135,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB451C2022D6BB8A005E7C26 /* DeviceMotionViewController.swift in Sources */,
+				EB451C1C22D6B92B005E7C26 /* PedometerViewController.swift in Sources */,
 				EB451BFF22D6B704005E7C26 /* ViewController.swift in Sources */,
+				EB451C1A22D6B91D005E7C26 /* MagnetometerViewController.swift in Sources */,
+				EB451C1E22D6B93E005E7C26 /* AltimeterViewController.swift in Sources */,
 				EB451BFD22D6B704005E7C26 /* AppDelegate.swift in Sources */,
+				EB451C1622D6B8D4005E7C26 /* GyroscopeViewController.swift in Sources */,
+				EB451C1422D6B8C2005E7C26 /* AccelerometerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
